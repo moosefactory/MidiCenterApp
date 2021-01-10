@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1F72F325A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F225A0752A00D4F5FC /* MidiCenterAppView.swift */; };
+		BC1F72F425A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F225A0752A00D4F5FC /* MidiCenterAppView.swift */; };
+		BC1F72FA25A0758800D4F5FC /* MidiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F925A0758800D4F5FC /* MidiConfigView.swift */; };
+		BC1F72FB25A0758800D4F5FC /* MidiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F925A0758800D4F5FC /* MidiConfigView.swift */; };
+		BC464882259B5CE600F60370 /* MidiOutletTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464878259B5CB100F60370 /* MidiOutletTableView.swift */; };
+		BC464883259B5CE600F60370 /* MidiOutletTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464878259B5CB100F60370 /* MidiOutletTableView.swift */; };
+		BC464889259B5D1C00F60370 /* MidiConnectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464888259B5D1C00F60370 /* MidiConnectionTableView.swift */; };
+		BC46488A259B5D1C00F60370 /* MidiConnectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464888259B5D1C00F60370 /* MidiConnectionTableView.swift */; };
+		BC46489A259B747800F60370 /* MidiConnectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464899259B747800F60370 /* MidiConnectionDetailView.swift */; };
+		BC46489B259B747800F60370 /* MidiConnectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464899259B747800F60370 /* MidiConnectionDetailView.swift */; };
+		BC4FC00225AA5D8500C0DB8E /* SwiftMidiCenter in Frameworks */ = {isa = PBXBuildFile; productRef = BC4FC00125AA5D8500C0DB8E /* SwiftMidiCenter */; };
+		BC4FC00425AA5D8D00C0DB8E /* SwiftMIDI in Frameworks */ = {isa = PBXBuildFile; productRef = BC4FC00325AA5D8D00C0DB8E /* SwiftMIDI */; };
+		BC9C093D25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */; };
+		BC9C093E25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */; };
+		BCB987F5259BC084009829CA /* MFPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB987F4259BC084009829CA /* MFPickerView.swift */; };
+		BCB987F6259BC084009829CA /* MFPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB987F4259BC084009829CA /* MFPickerView.swift */; };
+		BCC19660259A02EA0079D423 /* MidiCenterCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */; };
+		BCC19661259A02EA0079D423 /* MidiCenterCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */; };
+		BCC19674259A267F0079D423 /* ConfigMidiOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19673259A267F0079D423 /* ConfigMidiOutputView.swift */; };
+		BCC19675259A267F0079D423 /* ConfigMidiOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19673259A267F0079D423 /* ConfigMidiOutputView.swift */; };
+		BCC1967B259A271C0079D423 /* MidiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1967A259A271C0079D423 /* MidiConfiguration.swift */; };
+		BCC1967C259A271C0079D423 /* MidiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1967A259A271C0079D423 /* MidiConfiguration.swift */; };
+		BCC19682259A374F0079D423 /* ConfigMidiThruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */; };
+		BCC19683259A374F0079D423 /* ConfigMidiThruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */; };
+		BCD6843725A9CFF30048AD99 /* ChannelsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */; };
+		BCD6843825A9CFF30048AD99 /* ChannelsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */; };
+		BCD6843D25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843C25A9D0AA0048AD99 /* MidiRangeView.swift */; };
+		BCD6843E25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843C25A9D0AA0048AD99 /* MidiRangeView.swift */; };
+		BCE8637625A65E2B00D0BC74 /* SquareToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8637325A65E2A00D0BC74 /* SquareToggleView.swift */; };
+		BCE8637725A65E2B00D0BC74 /* SquareToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8637325A65E2A00D0BC74 /* SquareToggleView.swift */; };
+		BCE8637825A65E2B00D0BC74 /* BitToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8637425A65E2B00D0BC74 /* BitToggleView.swift */; };
+		BCE8637925A65E2B00D0BC74 /* BitToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8637425A65E2B00D0BC74 /* BitToggleView.swift */; };
+		BCE8637A25A65E2B00D0BC74 /* ChannelFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8637525A65E2B00D0BC74 /* ChannelFilterView.swift */; };
+		BCE8637B25A65E2B00D0BC74 /* ChannelFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8637525A65E2B00D0BC74 /* ChannelFilterView.swift */; };
+		BCE863AD25A7102500D0BC74 /* ChannelMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863AC25A7102500D0BC74 /* ChannelMatrixView.swift */; };
+		BCE863AE25A7102500D0BC74 /* ChannelMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863AC25A7102500D0BC74 /* ChannelMatrixView.swift */; };
+		BCE863B325A7312300D0BC74 /* ChannelsTransposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863B225A7312300D0BC74 /* ChannelsTransposeView.swift */; };
+		BCE863B425A7312300D0BC74 /* ChannelsTransposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863B225A7312300D0BC74 /* ChannelsTransposeView.swift */; };
+		BCE863B925A732C500D0BC74 /* TransposeMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863B825A732C500D0BC74 /* TransposeMatrixView.swift */; };
+		BCE863BA25A732C500D0BC74 /* TransposeMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863B825A732C500D0BC74 /* TransposeMatrixView.swift */; };
+		BCE863C625A897FE00D0BC74 /* MidiConnection+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863C525A897FE00D0BC74 /* MidiConnection+Test.swift */; };
+		BCE863C725A897FE00D0BC74 /* MidiConnection+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863C525A897FE00D0BC74 /* MidiConnection+Test.swift */; };
+		BCE863D725A8F07100D0BC74 /* MidiFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863D625A8F07100D0BC74 /* MidiFilterView.swift */; };
+		BCE863D825A8F07100D0BC74 /* MidiFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE863D625A8F07100D0BC74 /* MidiFilterView.swift */; };
+		BCF5BF03259BA5C70051B9EE /* MidiConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5BF02259BA5C70051B9EE /* MidiConnectionView.swift */; };
+		BCF5BF04259BA5C70051B9EE /* MidiConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5BF02259BA5C70051B9EE /* MidiConnectionView.swift */; };
+		BCF770992598AEA700BC5468 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF770982598AEA700BC5468 /* Tests_iOS.swift */; };
+		BCF770A42598AEA700BC5468 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF770A32598AEA700BC5468 /* Tests_macOS.swift */; };
+		BCF770A62598AEA700BC5468 /* MidiCenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7707C2598AEA600BC5468 /* MidiCenterApp.swift */; };
+		BCF770A72598AEA700BC5468 /* MidiCenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7707C2598AEA600BC5468 /* MidiCenterApp.swift */; };
+		BCF770A82598AEA700BC5468 /* MidiCenterDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7707D2598AEA600BC5468 /* MidiCenterDocument.swift */; };
+		BCF770A92598AEA700BC5468 /* MidiCenterDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7707D2598AEA600BC5468 /* MidiCenterDocument.swift */; };
+		BCF770AA2598AEA700BC5468 /* MidiCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7707E2598AEA600BC5468 /* MidiCenterView.swift */; };
+		BCF770AB2598AEA700BC5468 /* MidiCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7707E2598AEA600BC5468 /* MidiCenterView.swift */; };
+		BCF770AC2598AEA700BC5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF7707F2598AEA700BC5468 /* Assets.xcassets */; };
+		BCF770AD2598AEA700BC5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF7707F2598AEA700BC5468 /* Assets.xcassets */; };
+		BCF771442599131A00BC5468 /* MidiCenterAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF771432599131A00BC5468 /* MidiCenterAppModel.swift */; };
+		BCF771452599131A00BC5468 /* MidiCenterAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF771432599131A00BC5468 /* MidiCenterAppModel.swift */; };
+		BCF771522599172600BC5468 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7713D2599128300BC5468 /* ProjectView.swift */; };
+		BCF771572599172600BC5468 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7713D2599128300BC5468 /* ProjectView.swift */; };
+		BCF771622599277400BC5468 /* ConfigMidiInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF771612599277400BC5468 /* ConfigMidiInputView.swift */; };
+		BCF771632599277400BC5468 /* ConfigMidiInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF771612599277400BC5468 /* ConfigMidiInputView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCF770952598AEA700BC5468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF770772598AEA500BC5468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF770832598AEA700BC5468;
+			remoteInfo = "MidiCenter (iOS)";
+		};
+		BCF770A02598AEA700BC5468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF770772598AEA500BC5468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF7708B2598AEA700BC5468;
+			remoteInfo = "MidiCenter (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCF770E72598B06F00BC5468 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC1F72F225A0752A00D4F5FC /* MidiCenterAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterAppView.swift; sourceTree = "<group>"; };
+		BC1F72F925A0758800D4F5FC /* MidiConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConfigView.swift; sourceTree = "<group>"; };
+		BC464878259B5CB100F60370 /* MidiOutletTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiOutletTableView.swift; sourceTree = "<group>"; };
+		BC464888259B5D1C00F60370 /* MidiConnectionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionTableView.swift; sourceTree = "<group>"; };
+		BC464899259B747800F60370 /* MidiConnectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionDetailView.swift; sourceTree = "<group>"; };
+		BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewConnectionDialog.swift; sourceTree = "<group>"; };
+		BCB987F4259BC084009829CA /* MFPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFPickerView.swift; sourceTree = "<group>"; };
+		BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterCommands.swift; sourceTree = "<group>"; };
+		BCC19673259A267F0079D423 /* ConfigMidiOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMidiOutputView.swift; sourceTree = "<group>"; };
+		BCC1967A259A271C0079D423 /* MidiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConfiguration.swift; sourceTree = "<group>"; };
+		BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMidiThruView.swift; sourceTree = "<group>"; };
+		BCD3EF3B259EA97300CAF473 /* MidiCenterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MidiCenterApp.entitlements; sourceTree = "<group>"; };
+		BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsMapView.swift; sourceTree = "<group>"; };
+		BCD6843C25A9D0AA0048AD99 /* MidiRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiRangeView.swift; sourceTree = "<group>"; };
+		BCE8637325A65E2A00D0BC74 /* SquareToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareToggleView.swift; sourceTree = "<group>"; };
+		BCE8637425A65E2B00D0BC74 /* BitToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitToggleView.swift; sourceTree = "<group>"; };
+		BCE8637525A65E2B00D0BC74 /* ChannelFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelFilterView.swift; sourceTree = "<group>"; };
+		BCE863AC25A7102500D0BC74 /* ChannelMatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMatrixView.swift; sourceTree = "<group>"; };
+		BCE863B225A7312300D0BC74 /* ChannelsTransposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTransposeView.swift; sourceTree = "<group>"; };
+		BCE863B825A732C500D0BC74 /* TransposeMatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransposeMatrixView.swift; sourceTree = "<group>"; };
+		BCE863C525A897FE00D0BC74 /* MidiConnection+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MidiConnection+Test.swift"; sourceTree = "<group>"; };
+		BCE863D625A8F07100D0BC74 /* MidiFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiFilterView.swift; sourceTree = "<group>"; };
+		BCF5BF02259BA5C70051B9EE /* MidiConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionView.swift; sourceTree = "<group>"; };
+		BCF7707C2598AEA600BC5468 /* MidiCenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterApp.swift; sourceTree = "<group>"; };
+		BCF7707D2598AEA600BC5468 /* MidiCenterDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterDocument.swift; sourceTree = "<group>"; };
+		BCF7707E2598AEA600BC5468 /* MidiCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterView.swift; sourceTree = "<group>"; };
+		BCF7707F2598AEA700BC5468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCF770842598AEA700BC5468 /* MidiCenterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiCenterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF770872598AEA700BC5468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF7708C2598AEA700BC5468 /* MidiCenterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiCenterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF7708E2598AEA700BC5468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF7708F2598AEA700BC5468 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BCF770942598AEA700BC5468 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF770982598AEA700BC5468 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		BCF7709A2598AEA700BC5468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF7709F2598AEA700BC5468 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF770A32598AEA700BC5468 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		BCF770A52598AEA700BC5468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF7713D2599128300BC5468 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		BCF771432599131A00BC5468 /* MidiCenterAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterAppModel.swift; sourceTree = "<group>"; };
+		BCF771612599277400BC5468 /* ConfigMidiInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMidiInputView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF770812598AEA700BC5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF770892598AEA700BC5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4FC00225AA5D8500C0DB8E /* SwiftMidiCenter in Frameworks */,
+				BC4FC00425AA5D8D00C0DB8E /* SwiftMIDI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF770912598AEA700BC5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF7709C2598AEA700BC5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC1F730F25A07A4D00D4F5FC /* Midi Config View */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F72F925A0758800D4F5FC /* MidiConfigView.swift */,
+				BC1F731425A07B2A00D4F5FC /* Connection */,
+			);
+			path = "Midi Config View";
+			sourceTree = "<group>";
+		};
+		BC1F731425A07B2A00D4F5FC /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				BC464888259B5D1C00F60370 /* MidiConnectionTableView.swift */,
+				BC464899259B747800F60370 /* MidiConnectionDetailView.swift */,
+				BCF5BF02259BA5C70051B9EE /* MidiConnectionView.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		BC4FC01125AB049B00C0DB8E /* MoofSwiftUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BCB987F4259BC084009829CA /* MFPickerView.swift */,
+				BCE8637425A65E2B00D0BC74 /* BitToggleView.swift */,
+				BCE8637325A65E2A00D0BC74 /* SquareToggleView.swift */,
+			);
+			path = MoofSwiftUIKit;
+			sourceTree = "<group>";
+		};
+		BC4FC01525AB04E000C0DB8E /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		BCC19666259A1B040079D423 /* Midi Center Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF7707E2598AEA600BC5468 /* MidiCenterView.swift */,
+				BC464878259B5CB100F60370 /* MidiOutletTableView.swift */,
+			);
+			path = "Midi Center Views";
+			sourceTree = "<group>";
+		};
+		BCE8637F25A65E3100D0BC74 /* MidiViews */ = {
+			isa = PBXGroup;
+			children = (
+				BCE8637525A65E2B00D0BC74 /* ChannelFilterView.swift */,
+				BCE863AC25A7102500D0BC74 /* ChannelMatrixView.swift */,
+				BCE863B225A7312300D0BC74 /* ChannelsTransposeView.swift */,
+				BCD6843C25A9D0AA0048AD99 /* MidiRangeView.swift */,
+				BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */,
+				BCE863B825A732C500D0BC74 /* TransposeMatrixView.swift */,
+				BCE863D625A8F07100D0BC74 /* MidiFilterView.swift */,
+			);
+			path = MidiViews;
+			sourceTree = "<group>";
+		};
+		BCE863CB25A8981B00D0BC74 /* Midi Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCE863C525A897FE00D0BC74 /* MidiConnection+Test.swift */,
+			);
+			path = "Midi Utils";
+			sourceTree = "<group>";
+		};
+		BCE863CF25A8984300D0BC74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF7713D2599128300BC5468 /* ProjectView.swift */,
+				BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */,
+				BCF771612599277400BC5468 /* ConfigMidiInputView.swift */,
+				BCC19673259A267F0079D423 /* ConfigMidiOutputView.swift */,
+				BC1F72F225A0752A00D4F5FC /* MidiCenterAppView.swift */,
+				BCC19666259A1B040079D423 /* Midi Center Views */,
+				BC1F730F25A07A4D00D4F5FC /* Midi Config View */,
+				BCE8637F25A65E3100D0BC74 /* MidiViews */,
+				BC4FC01525AB04E000C0DB8E /* Dialogs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCF770762598AEA500BC5468 = {
+			isa = PBXGroup;
+			children = (
+				BCD3EF3B259EA97300CAF473 /* MidiCenterApp.entitlements */,
+				BCF7707B2598AEA600BC5468 /* Shared */,
+				BCF770862598AEA700BC5468 /* iOS */,
+				BCF7708D2598AEA700BC5468 /* macOS */,
+				BCF770972598AEA700BC5468 /* Tests iOS */,
+				BCF770A22598AEA700BC5468 /* Tests macOS */,
+				BCF770852598AEA700BC5468 /* Products */,
+				BCF7710F2598B60C00BC5468 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF7707B2598AEA600BC5468 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FC01125AB049B00C0DB8E /* MoofSwiftUIKit */,
+				BCF7707C2598AEA600BC5468 /* MidiCenterApp.swift */,
+				BCF7707D2598AEA600BC5468 /* MidiCenterDocument.swift */,
+				BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */,
+				BCE863CB25A8981B00D0BC74 /* Midi Utils */,
+				BCE863CF25A8984300D0BC74 /* Views */,
+				BCF7715C2599242800BC5468 /* Model */,
+				BCF7707F2598AEA700BC5468 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BCF770852598AEA700BC5468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF770842598AEA700BC5468 /* MidiCenterApp.app */,
+				BCF7708C2598AEA700BC5468 /* MidiCenterApp.app */,
+				BCF770942598AEA700BC5468 /* Tests iOS.xctest */,
+				BCF7709F2598AEA700BC5468 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF770862598AEA700BC5468 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCF770872598AEA700BC5468 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BCF7708D2598AEA700BC5468 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCF7708E2598AEA700BC5468 /* Info.plist */,
+				BCF7708F2598AEA700BC5468 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		BCF770972598AEA700BC5468 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCF770982598AEA700BC5468 /* Tests_iOS.swift */,
+				BCF7709A2598AEA700BC5468 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		BCF770A22598AEA700BC5468 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCF770A32598AEA700BC5468 /* Tests_macOS.swift */,
+				BCF770A52598AEA700BC5468 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		BCF7710F2598B60C00BC5468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCF7715C2599242800BC5468 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCF771432599131A00BC5468 /* MidiCenterAppModel.swift */,
+				BCC1967A259A271C0079D423 /* MidiConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF770832598AEA700BC5468 /* MidiCenterApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF770B02598AEA700BC5468 /* Build configuration list for PBXNativeTarget "MidiCenterApp (iOS)" */;
+			buildPhases = (
+				BCF770802598AEA700BC5468 /* Sources */,
+				BCF770812598AEA700BC5468 /* Frameworks */,
+				BCF770822598AEA700BC5468 /* Resources */,
+				BCF770E72598B06F00BC5468 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MidiCenterApp (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "MidiCenter (iOS)";
+			productReference = BCF770842598AEA700BC5468 /* MidiCenterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF7708B2598AEA700BC5468 /* MidiCenterApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF770B32598AEA700BC5468 /* Build configuration list for PBXNativeTarget "MidiCenterApp (macOS)" */;
+			buildPhases = (
+				BCF770882598AEA700BC5468 /* Sources */,
+				BCF770892598AEA700BC5468 /* Frameworks */,
+				BCF7708A2598AEA700BC5468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MidiCenterApp (macOS)";
+			packageProductDependencies = (
+				BC4FC00125AA5D8500C0DB8E /* SwiftMidiCenter */,
+				BC4FC00325AA5D8D00C0DB8E /* SwiftMIDI */,
+			);
+			productName = "MidiCenter (macOS)";
+			productReference = BCF7708C2598AEA700BC5468 /* MidiCenterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF770932598AEA700BC5468 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF770B62598AEA700BC5468 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				BCF770902598AEA700BC5468 /* Sources */,
+				BCF770912598AEA700BC5468 /* Frameworks */,
+				BCF770922598AEA700BC5468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF770962598AEA700BC5468 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = BCF770942598AEA700BC5468 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BCF7709E2598AEA700BC5468 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF770B92598AEA700BC5468 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				BCF7709B2598AEA700BC5468 /* Sources */,
+				BCF7709C2598AEA700BC5468 /* Frameworks */,
+				BCF7709D2598AEA700BC5468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF770A12598AEA700BC5468 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = BCF7709F2598AEA700BC5468 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF770772598AEA500BC5468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BCF770832598AEA700BC5468 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					BCF7708B2598AEA700BC5468 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					BCF770932598AEA700BC5468 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BCF770832598AEA700BC5468;
+					};
+					BCF7709E2598AEA700BC5468 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BCF7708B2598AEA700BC5468;
+					};
+				};
+			};
+			buildConfigurationList = BCF7707A2598AEA500BC5468 /* Build configuration list for PBXProject "MidiCenterApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF770762598AEA500BC5468;
+			packageReferences = (
+				BC18D476259E932F001CFE2C /* XCRemoteSwiftPackageReference "SwiftMIDI" */,
+				BC4FBFF825AA5D2200C0DB8E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */,
+			);
+			productRefGroup = BCF770852598AEA700BC5468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF770832598AEA700BC5468 /* MidiCenterApp (iOS) */,
+				BCF7708B2598AEA700BC5468 /* MidiCenterApp (macOS) */,
+				BCF770932598AEA700BC5468 /* Tests iOS */,
+				BCF7709E2598AEA700BC5468 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF770822598AEA700BC5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF770AC2598AEA700BC5468 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF7708A2598AEA700BC5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF770AD2598AEA700BC5468 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF770922598AEA700BC5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF7709D2598AEA700BC5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF770802598AEA700BC5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF770A82598AEA700BC5468 /* MidiCenterDocument.swift in Sources */,
+				BCC19660259A02EA0079D423 /* MidiCenterCommands.swift in Sources */,
+				BC1F72F325A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */,
+				BCE863C625A897FE00D0BC74 /* MidiConnection+Test.swift in Sources */,
+				BCF771442599131A00BC5468 /* MidiCenterAppModel.swift in Sources */,
+				BCF771522599172600BC5468 /* ProjectView.swift in Sources */,
+				BCF5BF03259BA5C70051B9EE /* MidiConnectionView.swift in Sources */,
+				BCF770A62598AEA700BC5468 /* MidiCenterApp.swift in Sources */,
+				BCF771622599277400BC5468 /* ConfigMidiInputView.swift in Sources */,
+				BCC1967B259A271C0079D423 /* MidiConfiguration.swift in Sources */,
+				BC9C093D25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */,
+				BCE863B325A7312300D0BC74 /* ChannelsTransposeView.swift in Sources */,
+				BCE863B925A732C500D0BC74 /* TransposeMatrixView.swift in Sources */,
+				BCD6843D25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */,
+				BC464889259B5D1C00F60370 /* MidiConnectionTableView.swift in Sources */,
+				BC1F72FA25A0758800D4F5FC /* MidiConfigView.swift in Sources */,
+				BC464882259B5CE600F60370 /* MidiOutletTableView.swift in Sources */,
+				BCE8637625A65E2B00D0BC74 /* SquareToggleView.swift in Sources */,
+				BCD6843725A9CFF30048AD99 /* ChannelsMapView.swift in Sources */,
+				BCC19674259A267F0079D423 /* ConfigMidiOutputView.swift in Sources */,
+				BCE863AD25A7102500D0BC74 /* ChannelMatrixView.swift in Sources */,
+				BCE863D725A8F07100D0BC74 /* MidiFilterView.swift in Sources */,
+				BCB987F5259BC084009829CA /* MFPickerView.swift in Sources */,
+				BC46489A259B747800F60370 /* MidiConnectionDetailView.swift in Sources */,
+				BCC19682259A374F0079D423 /* ConfigMidiThruView.swift in Sources */,
+				BCE8637825A65E2B00D0BC74 /* BitToggleView.swift in Sources */,
+				BCF770AA2598AEA700BC5468 /* MidiCenterView.swift in Sources */,
+				BCE8637A25A65E2B00D0BC74 /* ChannelFilterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF770882598AEA700BC5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF770A92598AEA700BC5468 /* MidiCenterDocument.swift in Sources */,
+				BCC19661259A02EA0079D423 /* MidiCenterCommands.swift in Sources */,
+				BC1F72F425A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */,
+				BCE863C725A897FE00D0BC74 /* MidiConnection+Test.swift in Sources */,
+				BCF771452599131A00BC5468 /* MidiCenterAppModel.swift in Sources */,
+				BCF771572599172600BC5468 /* ProjectView.swift in Sources */,
+				BCF5BF04259BA5C70051B9EE /* MidiConnectionView.swift in Sources */,
+				BCF770A72598AEA700BC5468 /* MidiCenterApp.swift in Sources */,
+				BCF771632599277400BC5468 /* ConfigMidiInputView.swift in Sources */,
+				BCC1967C259A271C0079D423 /* MidiConfiguration.swift in Sources */,
+				BC9C093E25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */,
+				BCE863B425A7312300D0BC74 /* ChannelsTransposeView.swift in Sources */,
+				BCE863BA25A732C500D0BC74 /* TransposeMatrixView.swift in Sources */,
+				BCD6843E25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */,
+				BC46488A259B5D1C00F60370 /* MidiConnectionTableView.swift in Sources */,
+				BC1F72FB25A0758800D4F5FC /* MidiConfigView.swift in Sources */,
+				BC464883259B5CE600F60370 /* MidiOutletTableView.swift in Sources */,
+				BCE8637725A65E2B00D0BC74 /* SquareToggleView.swift in Sources */,
+				BCD6843825A9CFF30048AD99 /* ChannelsMapView.swift in Sources */,
+				BCC19675259A267F0079D423 /* ConfigMidiOutputView.swift in Sources */,
+				BCE863AE25A7102500D0BC74 /* ChannelMatrixView.swift in Sources */,
+				BCE863D825A8F07100D0BC74 /* MidiFilterView.swift in Sources */,
+				BCB987F6259BC084009829CA /* MFPickerView.swift in Sources */,
+				BC46489B259B747800F60370 /* MidiConnectionDetailView.swift in Sources */,
+				BCC19683259A374F0079D423 /* ConfigMidiThruView.swift in Sources */,
+				BCE8637925A65E2B00D0BC74 /* BitToggleView.swift in Sources */,
+				BCF770AB2598AEA700BC5468 /* MidiCenterView.swift in Sources */,
+				BCE8637B25A65E2B00D0BC74 /* ChannelFilterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF770902598AEA700BC5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF770992598AEA700BC5468 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF7709B2598AEA700BC5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF770A42598AEA700BC5468 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCF770962598AEA700BC5468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF770832598AEA700BC5468 /* MidiCenterApp (iOS) */;
+			targetProxy = BCF770952598AEA700BC5468 /* PBXContainerItemProxy */;
+		};
+		BCF770A12598AEA700BC5468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF7708B2598AEA700BC5468 /* MidiCenterApp (macOS) */;
+			targetProxy = BCF770A02598AEA700BC5468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCF770AE2598AEA700BC5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCF770AF2598AEA700BC5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BCF770B12598AEA700BC5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MidiCenterApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moosefactory.MidiCenterApp;
+				PRODUCT_NAME = MidiCenterApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCF770B22598AEA700BC5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MidiCenterApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moosefactory.MidiCenterApp;
+				PRODUCT_NAME = MidiCenterApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF770B42598AEA700BC5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moosefactory.MidiCenterApp;
+				PRODUCT_NAME = MidiCenterApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BCF770B52598AEA700BC5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moosefactory.MidiCenterApp;
+				PRODUCT_NAME = MidiCenterApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BCF770B72598AEA700BC5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moosefactory.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MidiCenter (iOS)";
+			};
+			name = Debug;
+		};
+		BCF770B82598AEA700BC5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moosefactory.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MidiCenter (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF770BA2598AEA700BC5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moosefactory.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "MidiCenter (macOS)";
+			};
+			name = Debug;
+		};
+		BCF770BB2598AEA700BC5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VMXFN634RR;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moosefactory.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "MidiCenter (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF7707A2598AEA500BC5468 /* Build configuration list for PBXProject "MidiCenterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF770AE2598AEA700BC5468 /* Debug */,
+				BCF770AF2598AEA700BC5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF770B02598AEA700BC5468 /* Build configuration list for PBXNativeTarget "MidiCenterApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF770B12598AEA700BC5468 /* Debug */,
+				BCF770B22598AEA700BC5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF770B32598AEA700BC5468 /* Build configuration list for PBXNativeTarget "MidiCenterApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF770B42598AEA700BC5468 /* Debug */,
+				BCF770B52598AEA700BC5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF770B62598AEA700BC5468 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF770B72598AEA700BC5468 /* Debug */,
+				BCF770B82598AEA700BC5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF770B92598AEA700BC5468 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF770BA2598AEA700BC5468 /* Debug */,
+				BCF770BB2598AEA700BC5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC18D476259E932F001CFE2C /* XCRemoteSwiftPackageReference "SwiftMIDI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:moosefactory/SwiftMIDI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BC4FBFF825AA5D2200C0DB8E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:moosefactory/SwiftMidiCenter.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC4FC00125AA5D8500C0DB8E /* SwiftMidiCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC4FBFF825AA5D2200C0DB8E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */;
+			productName = SwiftMidiCenter;
+		};
+		BC4FC00325AA5D8D00C0DB8E /* SwiftMIDI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC18D476259E932F001CFE2C /* XCRemoteSwiftPackageReference "SwiftMIDI" */;
+			productName = SwiftMIDI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BCF770772598AEA500BC5468 /* Project object */;
+}

@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftMIDI",
+        "repositoryURL": "git@github.com:moosefactory/SwiftMIDI.git",
+        "state": {
+          "branch": "main",
+          "revision": "5484e9ff95a683185c9d7ce81eebd10e57a37c8e",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftMidiCenter",
+        "repositoryURL": "git@github.com:moosefactory/SwiftMidiCenter.git",
+        "state": {
+          "branch": "main",
+          "revision": "7dd46f2de563f5ac735af2ad2e4c9e7fef8beb81",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
