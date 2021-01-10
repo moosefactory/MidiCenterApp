@@ -35,4 +35,4 @@ SwiftMIDI is available under the MIT license. See the [LICENSE](LICENSE) file fo
 ## <font color='#1E72AD'>History</font>
 
 First Commit:
-v1.0.0 : 2021-01-01 at Midnight, Paris Time. Happy New Year :)
+v1.0.0 : 2021-01-10
