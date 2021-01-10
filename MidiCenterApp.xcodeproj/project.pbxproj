@@ -107,7 +107,7 @@
 		BC464878259B5CB100F60370 /* MidiOutletTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiOutletTableView.swift; sourceTree = "<group>"; };
 		BC464888259B5D1C00F60370 /* MidiConnectionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionTableView.swift; sourceTree = "<group>"; };
 		BC464899259B747800F60370 /* MidiConnectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionDetailView.swift; sourceTree = "<group>"; };
-		BC4FC01C25AB0B5D00C0DB8E /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
+		BC4FC01C25AB0B5D00C0DB8E /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 		BC4FC01D25AB0B5D00C0DB8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BC4FC01E25AB0B5E00C0DB8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BC4FC01F25AB0B5E00C0DB8E /* SwiftMIDI_ReadMe_Scheme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftMIDI_ReadMe_Scheme.jpg; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4FC01F25AB0B5E00C0DB8E /* SwiftMIDI_ReadMe_Scheme.jpg */,
-				BC4FC01C25AB0B5D00C0DB8E /* ScreenShot.png */,
+				BC4FC01C25AB0B5D00C0DB8E /* Screenshot.png */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
