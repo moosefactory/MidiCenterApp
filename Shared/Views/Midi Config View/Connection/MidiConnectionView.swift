@@ -15,10 +15,10 @@ struct MidiConnectionView: View {
     
     @ObservedObject var connection: MidiConnection
     
-//    @State var selectedInputs: Set<String> = Set<String>()
-//    @State var selectedOuputs: Set<String> = Set<String>()
-//    var selectedMaskTypes = [MidiEventTypeMaskSelector]()
-
+    //    @State var selectedInputs: Set<String> = Set<String>()
+    //    @State var selectedOuputs: Set<String> = Set<String>()
+    //    var selectedMaskTypes = [MidiEventTypeMaskSelector]()
+    
     var body: some View {
         
         // Rebuilds picker items on the fly
@@ -31,39 +31,41 @@ struct MidiConnectionView: View {
         }))
         
         VStack {
-            Button("All Note Off") {
-                do {
-                try connection.sendAllNoteOff()
-                } catch {
-                print(error)
+            HStack {
+                Button("All Note Off") {
+                    do {
+                        try connection.sendAllNoteOff()
+                    } catch {
+                        print(error)
+                    }
                 }
-            }
-            Button("Send One Note Channel1") {
-                do {
-                try connection.sendOneNote()
-                } catch {
-                print(error)
+                Button("Note Channel 1") {
+                    do {
+                        try connection.sendOneNote()
+                    } catch {
+                        print(error)
+                    }
                 }
-            }
-            Button("Send One Note on all channels") {
-                do {
-                try connection.sendOneNoteAllChannels()
-                } catch {
-                print(error)
+                Button("Note all channels") {
+                    do {
+                        try connection.sendOneNoteAllChannels()
+                    } catch {
+                        print(error)
+                    }
                 }
-            }
-            Button("Send Chord  Channel 1") {
-                do {
-                try connection.sendOneChord()
-                } catch {
-                print(error)
+                Button("Chord Channel 1") {
+                    do {
+                        try connection.sendOneChord()
+                    } catch {
+                        print(error)
+                    }
                 }
-            }
-            Button("Send Chord on all channels") {
-                do {
-                try connection.sendOneChordOnAllChannels()
-                } catch {
-                print(error)
+                Button("Send Chord all channels") {
+                    do {
+                        try connection.sendOneChordOnAllChannels()
+                    } catch {
+                        print(error)
+                    }
                 }
             }
             #if os(iOS)
@@ -93,20 +95,20 @@ struct MidiConnectionView: View {
                 //
                 // Limitation of swiftUI, or bad usage
                 
-//                VStack {
-//                    GroupBox(label: Label("Input Transpose", image: "")) {
-//                        ChannelTransposeView(label: "Semitones:", transpositions: $connection.channelsTranspose)
-//                    }
-//
-//                    GroupBox(label: Label("Output Transpose", image: "")) {
-//
-//                        TransposeMatrixView(transposeMatrix: $connection.transposeMatrix)
-//                    }
-//                }
-//                    .tabItem {
-//                        Image(systemName: "2.square.fill")
-//                        Text("Transpose")
-//                    }
+                //                VStack {
+                //                    GroupBox(label: Label("Input Transpose", image: "")) {
+                //                        ChannelTransposeView(label: "Semitones:", transpositions: $connection.channelsTranspose)
+                //                    }
+                //
+                //                    GroupBox(label: Label("Output Transpose", image: "")) {
+                //
+                //                        TransposeMatrixView(transposeMatrix: $connection.transposeMatrix)
+                //                    }
+                //                }
+                //                    .tabItem {
+                //                        Image(systemName: "2.square.fill")
+                //                        Text("Transpose")
+                //                    }
             }.padding(10)
             
             HStack {

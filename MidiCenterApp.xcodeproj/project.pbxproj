@@ -107,6 +107,10 @@
 		BC464878259B5CB100F60370 /* MidiOutletTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiOutletTableView.swift; sourceTree = "<group>"; };
 		BC464888259B5D1C00F60370 /* MidiConnectionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionTableView.swift; sourceTree = "<group>"; };
 		BC464899259B747800F60370 /* MidiConnectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiConnectionDetailView.swift; sourceTree = "<group>"; };
+		BC4FC01C25AB0B5D00C0DB8E /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
+		BC4FC01D25AB0B5D00C0DB8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BC4FC01E25AB0B5E00C0DB8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BC4FC01F25AB0B5E00C0DB8E /* SwiftMIDI_ReadMe_Scheme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftMIDI_ReadMe_Scheme.jpg; sourceTree = "<group>"; };
 		BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewConnectionDialog.swift; sourceTree = "<group>"; };
 		BCB987F4259BC084009829CA /* MFPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFPickerView.swift; sourceTree = "<group>"; };
 		BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterCommands.swift; sourceTree = "<group>"; };
@@ -216,6 +220,15 @@
 			path = Dialogs;
 			sourceTree = "<group>";
 		};
+		BC4FC02025AB0B9700C0DB8E /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FC01F25AB0B5E00C0DB8E /* SwiftMIDI_ReadMe_Scheme.jpg */,
+				BC4FC01C25AB0B5D00C0DB8E /* ScreenShot.png */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		BCC19666259A1B040079D423 /* Midi Center Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +279,9 @@
 		BCF770762598AEA500BC5468 = {
 			isa = PBXGroup;
 			children = (
+				BC4FC01E25AB0B5E00C0DB8E /* README.md */,
+				BC4FC01D25AB0B5D00C0DB8E /* LICENSE */,
+				BC4FC02025AB0B9700C0DB8E /* Documentation */,
 				BCD3EF3B259EA97300CAF473 /* MidiCenterApp.entitlements */,
 				BCF7707B2598AEA600BC5468 /* Shared */,
 				BCF770862598AEA700BC5468 /* iOS */,
