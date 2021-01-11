@@ -19,6 +19,10 @@
 		BC46489B259B747800F60370 /* MidiConnectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464899259B747800F60370 /* MidiConnectionDetailView.swift */; };
 		BC4FC00225AA5D8500C0DB8E /* SwiftMidiCenter in Frameworks */ = {isa = PBXBuildFile; productRef = BC4FC00125AA5D8500C0DB8E /* SwiftMidiCenter */; };
 		BC4FC00425AA5D8D00C0DB8E /* SwiftMIDI in Frameworks */ = {isa = PBXBuildFile; productRef = BC4FC00325AA5D8D00C0DB8E /* SwiftMIDI */; };
+		BC4FC02A25AB1F7300C0DB8E /* MidiDeviceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC02925AB1F7300C0DB8E /* MidiDeviceTableView.swift */; };
+		BC4FC02B25AB1F7300C0DB8E /* MidiDeviceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC02925AB1F7300C0DB8E /* MidiDeviceTableView.swift */; };
+		BC4FC03025AB39A000C0DB8E /* MidiEntityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */; };
+		BC4FC03125AB39A000C0DB8E /* MidiEntityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */; };
 		BC9C093D25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */; };
 		BC9C093E25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */; };
 		BCB987F5259BC084009829CA /* MFPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB987F4259BC084009829CA /* MFPickerView.swift */; };
@@ -111,6 +115,10 @@
 		BC4FC01D25AB0B5D00C0DB8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BC4FC01E25AB0B5E00C0DB8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BC4FC01F25AB0B5E00C0DB8E /* SwiftMIDI_ReadMe_Scheme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftMIDI_ReadMe_Scheme.jpg; sourceTree = "<group>"; };
+		BC4FC02425AB141A00C0DB8E /* SwiftMidiCenter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftMidiCenter; path = ../SwiftMidiCenter; sourceTree = "<group>"; };
+		BC4FC02525AB141A00C0DB8E /* SwiftMIDI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftMIDI; path = ../SwiftMIDI; sourceTree = "<group>"; };
+		BC4FC02925AB1F7300C0DB8E /* MidiDeviceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiDeviceTableView.swift; sourceTree = "<group>"; };
+		BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiEntityTableView.swift; sourceTree = "<group>"; };
 		BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewConnectionDialog.swift; sourceTree = "<group>"; };
 		BCB987F4259BC084009829CA /* MFPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFPickerView.swift; sourceTree = "<group>"; };
 		BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterCommands.swift; sourceTree = "<group>"; };
@@ -234,6 +242,8 @@
 			children = (
 				BCF7707E2598AEA600BC5468 /* MidiCenterView.swift */,
 				BC464878259B5CB100F60370 /* MidiOutletTableView.swift */,
+				BC4FC02925AB1F7300C0DB8E /* MidiDeviceTableView.swift */,
+				BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */,
 			);
 			path = "Midi Center Views";
 			sourceTree = "<group>";
@@ -279,6 +289,8 @@
 		BCF770762598AEA500BC5468 = {
 			isa = PBXGroup;
 			children = (
+				BC4FC02525AB141A00C0DB8E /* SwiftMIDI */,
+				BC4FC02425AB141A00C0DB8E /* SwiftMidiCenter */,
 				BC4FC01E25AB0B5E00C0DB8E /* README.md */,
 				BC4FC01D25AB0B5D00C0DB8E /* LICENSE */,
 				BC4FC02025AB0B9700C0DB8E /* Documentation */,
@@ -541,6 +553,7 @@
 				BCF770A82598AEA700BC5468 /* MidiCenterDocument.swift in Sources */,
 				BCC19660259A02EA0079D423 /* MidiCenterCommands.swift in Sources */,
 				BC1F72F325A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */,
+				BC4FC02A25AB1F7300C0DB8E /* MidiDeviceTableView.swift in Sources */,
 				BCE863C625A897FE00D0BC74 /* MidiConnection+Test.swift in Sources */,
 				BCF771442599131A00BC5468 /* MidiCenterAppModel.swift in Sources */,
 				BCF771522599172600BC5468 /* ProjectView.swift in Sources */,
@@ -550,6 +563,7 @@
 				BCC1967B259A271C0079D423 /* MidiConfiguration.swift in Sources */,
 				BC9C093D25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */,
 				BCE863B325A7312300D0BC74 /* ChannelsTransposeView.swift in Sources */,
+				BC4FC03025AB39A000C0DB8E /* MidiEntityTableView.swift in Sources */,
 				BCE863B925A732C500D0BC74 /* TransposeMatrixView.swift in Sources */,
 				BCD6843D25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */,
 				BC464889259B5D1C00F60370 /* MidiConnectionTableView.swift in Sources */,
@@ -576,6 +590,7 @@
 				BCF770A92598AEA700BC5468 /* MidiCenterDocument.swift in Sources */,
 				BCC19661259A02EA0079D423 /* MidiCenterCommands.swift in Sources */,
 				BC1F72F425A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */,
+				BC4FC02B25AB1F7300C0DB8E /* MidiDeviceTableView.swift in Sources */,
 				BCE863C725A897FE00D0BC74 /* MidiConnection+Test.swift in Sources */,
 				BCF771452599131A00BC5468 /* MidiCenterAppModel.swift in Sources */,
 				BCF771572599172600BC5468 /* ProjectView.swift in Sources */,
@@ -585,6 +600,7 @@
 				BCC1967C259A271C0079D423 /* MidiConfiguration.swift in Sources */,
 				BC9C093E25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */,
 				BCE863B425A7312300D0BC74 /* ChannelsTransposeView.swift in Sources */,
+				BC4FC03125AB39A000C0DB8E /* MidiEntityTableView.swift in Sources */,
 				BCE863BA25A732C500D0BC74 /* TransposeMatrixView.swift in Sources */,
 				BCD6843E25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */,
 				BC46488A259B5D1C00F60370 /* MidiConnectionTableView.swift in Sources */,
