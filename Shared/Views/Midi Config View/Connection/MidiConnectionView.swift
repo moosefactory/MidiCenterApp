@@ -83,7 +83,7 @@ struct MidiConnectionView: View {
             TabView {
                 VStack {
                     GroupBox(label: Label("Filter", image: "pianokeys")) {
-                        MidiFilterView(filter: $connection.filter)
+                        MidiFilterView(filter: $connection.filterSettings)
                     }
                 }
                 .tabItem {
