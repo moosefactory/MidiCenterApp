@@ -12,13 +12,12 @@ struct MidiFilterView: View {
     
     @Binding var filter: MidiFilterSettings
     
-    var body: some View {
-        
-        let eventTypeItems = MFPickerItemsStore(items: MidiEventTypeMaskSelector.allCases.map ({
-            MFPickerItem(name: $0.description, identifier: $0.identifier, disabled: false)
-        }))
+    let eventTypeItems = MFPickerItemsStore(items: MidiEventTypeMaskSelector.allCases.map ({
+        MFPickerItem(name: $0.description, identifier: $0.identifier, disabled: false)
+    }))
 
-        let selectedMaskIdentifiers = Binding<Set<String>>(get: {
+    var body: some View {
+        let selectedMaskIdentifiers = Binding<Set<UUID>>(get: {
             let mask = $filter.eventTypes.wrappedValue
             var out = [MidiEventTypeMaskSelector]()
             if mask.contains(eventType: .noteOn) || mask.contains(eventType: .noteOff) {
@@ -39,22 +38,26 @@ struct MidiFilterView: View {
             if mask.contains(eventType: .realTimeMessage) {
                 out.append(.clock)
             }
-            return Set(out.map {$0.identifier})
+            
+            let identifiers = out.map { $0.identifier }
+            let items = eventTypeItems.items(for: identifiers)
+            return Set(items.compactMap {$0.uuid})
         }, set: {
             var mask = MidiEventTypeMask(rawValue: 0)
             print("--- \(mask)")
-            $0.forEach { id in
-                let sel = MidiEventTypeMaskSelector(with: id)
+            let items = eventTypeItems.items(for: Array($0))
+            items.forEach { item in
+                let sel = MidiEventTypeMaskSelector(with: item.identifier)
                 mask.rawValue = mask.rawValue | sel.mask.rawValue
-                print("\(id) => \(sel) => \(mask)")
+                print("\(item.identifier) => \(sel) => \(mask)")
             }
-
+            
             $filter.eventTypes.wrappedValue = mask
         })
-
+        
         VStack {
-                MFPickerView(items: eventTypeItems, selection: selectedMaskIdentifiers)
-
+            MFPickerView(title: "Event Types", items: eventTypeItems, selection: selectedMaskIdentifiers)
+            
             GroupBox(label: Label("Input Channel", image: "")) {
                 ChannelFilterView(label: "Enable:", channels: $filter.channels)
             }
@@ -62,11 +65,11 @@ struct MidiFilterView: View {
                 Text("Global Transpose").font(.caption).frame(width:120)
                 TextField("", value: $filter.globalTranspose, formatter: NumberFormatter()).frame(width: 60)
             }
-
+            
             GroupBox(label: Label("Channels Mapping", image: "")) {
-                ChannelsMapView(label: "Semitones:", mapping: $filter.channelsMap)
+                ChannelsMapView(label: "Destination Channel:", mapping: $filter.channelsMap)
             }
-
+            
             GroupBox(label: Label("Channels Transposition", image: "")) {
                 ChannelsTransposeView(label: "Semitones:", transpositions: $filter.channelsTranspose)
             }

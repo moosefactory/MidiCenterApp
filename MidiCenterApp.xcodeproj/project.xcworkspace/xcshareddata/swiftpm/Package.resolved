@@ -2,11 +2,20 @@
   "object": {
     "pins": [
       {
+        "package": "MoofFoundation",
+        "repositoryURL": "https://github.com/moosefactory/MoofFoundation.git",
+        "state": {
+          "branch": "master",
+          "revision": "72d0015cce3488116f907330397bc8c5c2bc0b94",
+          "version": null
+        }
+      },
+      {
         "package": "SwiftMIDI",
         "repositoryURL": "git@github.com:moosefactory/SwiftMIDI.git",
         "state": {
           "branch": "main",
-          "revision": "5484e9ff95a683185c9d7ce81eebd10e57a37c8e",
+          "revision": "91b11a24f2ea46b3ed1b8881e2e3fc2f1d966330",
           "version": null
         }
       },
@@ -15,7 +24,7 @@
         "repositoryURL": "git@github.com:moosefactory/SwiftMidiCenter.git",
         "state": {
           "branch": "main",
-          "revision": "7dd46f2de563f5ac735af2ad2e4c9e7fef8beb81",
+          "revision": "bfc80ea52777ee04f82fdcc216de4b26d98b122b",
           "version": null
         }
       }

@@ -35,6 +35,7 @@
 		BCC1967C259A271C0079D423 /* MidiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1967A259A271C0079D423 /* MidiConfiguration.swift */; };
 		BCC19682259A374F0079D423 /* ConfigMidiThruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */; };
 		BCC19683259A374F0079D423 /* ConfigMidiThruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */; };
+		BCD17B1B26260ED300033ABE /* MoofFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BCD17B1A26260ED300033ABE /* MoofFoundation */; };
 		BCD6843725A9CFF30048AD99 /* ChannelsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */; };
 		BCD6843825A9CFF30048AD99 /* ChannelsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */; };
 		BCD6843D25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843C25A9D0AA0048AD99 /* MidiRangeView.swift */; };
@@ -115,8 +116,6 @@
 		BC4FC01D25AB0B5D00C0DB8E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BC4FC01E25AB0B5E00C0DB8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BC4FC01F25AB0B5E00C0DB8E /* SwiftMIDI_ReadMe_Scheme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftMIDI_ReadMe_Scheme.jpg; sourceTree = "<group>"; };
-		BC4FC02425AB141A00C0DB8E /* SwiftMidiCenter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftMidiCenter; path = ../SwiftMidiCenter; sourceTree = "<group>"; };
-		BC4FC02525AB141A00C0DB8E /* SwiftMIDI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftMIDI; path = ../SwiftMIDI; sourceTree = "<group>"; };
 		BC4FC02925AB1F7300C0DB8E /* MidiDeviceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiDeviceTableView.swift; sourceTree = "<group>"; };
 		BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiEntityTableView.swift; sourceTree = "<group>"; };
 		BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewConnectionDialog.swift; sourceTree = "<group>"; };
@@ -169,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD17B1B26260ED300033ABE /* MoofFoundation in Frameworks */,
 				BC4FC00225AA5D8500C0DB8E /* SwiftMidiCenter in Frameworks */,
 				BC4FC00425AA5D8D00C0DB8E /* SwiftMIDI in Frameworks */,
 			);
@@ -289,8 +289,6 @@
 		BCF770762598AEA500BC5468 = {
 			isa = PBXGroup;
 			children = (
-				BC4FC02525AB141A00C0DB8E /* SwiftMIDI */,
-				BC4FC02425AB141A00C0DB8E /* SwiftMidiCenter */,
 				BC4FC01E25AB0B5E00C0DB8E /* README.md */,
 				BC4FC01D25AB0B5D00C0DB8E /* LICENSE */,
 				BC4FC02025AB0B9700C0DB8E /* Documentation */,
@@ -421,6 +419,7 @@
 			packageProductDependencies = (
 				BC4FC00125AA5D8500C0DB8E /* SwiftMidiCenter */,
 				BC4FC00325AA5D8D00C0DB8E /* SwiftMIDI */,
+				BCD17B1A26260ED300033ABE /* MoofFoundation */,
 			);
 			productName = "MidiCenter (macOS)";
 			productReference = BCF7708C2598AEA700BC5468 /* MidiCenterApp.app */;
@@ -499,6 +498,7 @@
 			packageReferences = (
 				BC18D476259E932F001CFE2C /* XCRemoteSwiftPackageReference "SwiftMIDI" */,
 				BC4FBFF825AA5D2200C0DB8E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */,
+				BCD17B1926260ED300033ABE /* XCRemoteSwiftPackageReference "MoofFoundation" */,
 			);
 			productRefGroup = BCF770852598AEA700BC5468 /* Products */;
 			projectDirPath = "";
@@ -1020,6 +1020,14 @@
 				kind = branch;
 			};
 		};
+		BCD17B1926260ED300033ABE /* XCRemoteSwiftPackageReference "MoofFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moosefactory/MoofFoundation.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1032,6 +1040,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BC18D476259E932F001CFE2C /* XCRemoteSwiftPackageReference "SwiftMIDI" */;
 			productName = SwiftMIDI;
+		};
+		BCD17B1A26260ED300033ABE /* MoofFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD17B1926260ED300033ABE /* XCRemoteSwiftPackageReference "MoofFoundation" */;
+			productName = MoofFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -20,16 +20,18 @@ struct MidiConnectionView: View {
     //    var selectedMaskTypes = [MidiEventTypeMaskSelector]()
     
     var body: some View {
-        
+            
         // Rebuilds picker items on the fly
         var inputItems = MFPickerItemsStore(items: midiCenter.inputs.map({
-            MFPickerItem(name: $0.name, identifier: "\($0.uuid)", disabled: !$0.available)
+            MFPickerItem(name: $0.name, identifier: "\($0.uuid)",
+                         uuid: $0.uuid, disabled: !$0.available)
         }))
         
         var outputItems = MFPickerItemsStore(items: midiCenter.outputs.map({
-            MFPickerItem(name: $0.name, identifier: "\($0.uuid)", disabled: !$0.available)
+            MFPickerItem(name: $0.name, identifier: "\($0.uuid)",
+                         uuid: $0.uuid, disabled: !$0.available)
         }))
-        
+
         VStack {
             HStack {
                 Button("All Note Off") {
@@ -70,13 +72,13 @@ struct MidiConnectionView: View {
             }
             #if os(iOS)
             VStack {
-                MFPickerView(items: inputItems, selection: $connection.sourceIdentifiers)
-                MFPickerView(items: outputItems, selection: $connection.destinationIdentifiers)
+                MFPickerView(title: "Sources", items: inputItems, selection: $connection.sourceIdentifiers)
+                MFPickerView(title: "Destinations", items: outputItems, selection: $connection.destinationIdentifiers)
             }
             #else
             HStack {
-                MFPickerView(items: inputItems, selection: $connection.sourceIdentifiers)
-                MFPickerView(items: outputItems, selection: $connection.destinationIdentifiers)
+                MFPickerView(title: "Sources", items: inputItems, selection: $connection.sourceIdentifiers)
+                MFPickerView(title: "Destinations", items: outputItems, selection: $connection.destinationIdentifiers)
             }
             #endif
             
@@ -115,14 +117,6 @@ struct MidiConnectionView: View {
                 Toggle("Enabled", isOn: $connection.enabled)
                 Toggle("Thru", isOn: $connection.midiThru)
             }.frame(alignment: .leading)
-            
-            Button("Update") {
-                do {
-                    //                    MidiCenter.shared.updateConnection(coreThruUUID: <#T##UUID#>, sources: T##[MidiOutlet], destinations: <#T##[MidiOutlet]#>)
-                } catch {
-                    print(error)
-                }
-            }
         }
         .padding(10)
         .frame(alignment: .topLeading)

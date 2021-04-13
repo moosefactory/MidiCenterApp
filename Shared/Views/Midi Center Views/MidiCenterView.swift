@@ -28,15 +28,15 @@ struct MidiCenterView: View {
                     Image(systemName: "2.square.fill")
                     Text("Outputs")
                 }
-            MidiDeviceTableView()
+            MidiDeviceTableView(showExternalDevices: false)
                 .tabItem {
                     Image(systemName: "3.square.fill")
                     Text("Devices")
                 }
-            MidiEntityTableView()
+            MidiDeviceTableView(showExternalDevices: true)
                 .tabItem {
                     Image(systemName: "4.square.fill")
-                    Text("Entities")
+                    Text("External Devices")
                 }
         }.padding(10)
     }

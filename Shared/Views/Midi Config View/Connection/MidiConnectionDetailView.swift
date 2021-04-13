@@ -23,6 +23,7 @@ struct MidiConnectionDetailView: View {
 //        #if os(iOS)
 //        .navigationBarTitleDisplayMode(.inline)
 //        #endif
+        
     }
 }
 

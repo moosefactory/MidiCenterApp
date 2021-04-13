@@ -12,11 +12,13 @@ struct MidiEntityTableView: View {
     
     @EnvironmentObject var midiCenter: MidiCenter
     
+    @State var entities: [MidiEntity]?
+    
     var body: some View {
         List {
-            let devices = midiCenter.entities
+            let entities = self.entities ?? midiCenter.entities
             withAnimation {
-                ForEach(devices, id: \.self) { entity in
+                ForEach(entities, id: \.self) { entity in
                     MidiEntityCell(entity: entity)
                         .disabled(!entity.available)
                         .opacity(entity.available ? 1 : 0.5)

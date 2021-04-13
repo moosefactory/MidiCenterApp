@@ -28,6 +28,6 @@ struct MidiConfigView: View {
 
 struct MidiConfigView_Previews: PreviewProvider {
     static var previews: some View {
-        MidiConfigView()
+        MidiConfigView().environmentObject(MidiCenter.test)
     }
 }
