@@ -15,7 +15,7 @@
         "repositoryURL": "git@github.com:moosefactory/SwiftMIDI.git",
         "state": {
           "branch": "main",
-          "revision": "91b11a24f2ea46b3ed1b8881e2e3fc2f1d966330",
+          "revision": "9d6a5051c3478ab5a183e5db2599acd4d07e858f",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "git@github.com:moosefactory/SwiftMidiCenter.git",
         "state": {
           "branch": "main",
-          "revision": "bfc80ea52777ee04f82fdcc216de4b26d98b122b",
+          "revision": "79d271c6bc4aaa29750aa2b3d2f992bdb2c011b9",
           "version": null
         }
       }

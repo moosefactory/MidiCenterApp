@@ -26,8 +26,12 @@ struct MidiConfigView: View {
     }
 }
 
+#if DEBUG
+
 struct MidiConfigView_Previews: PreviewProvider {
     static var previews: some View {
         MidiConfigView().environmentObject(MidiCenter.test)
     }
 }
+
+#endif

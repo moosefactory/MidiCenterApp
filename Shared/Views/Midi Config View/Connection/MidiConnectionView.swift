@@ -123,6 +123,7 @@ struct MidiConnectionView: View {
     }
 }
 
+#if DEBUG
 struct MidiThruView_Previews: PreviewProvider {
     
     static var previews: some View {
@@ -139,3 +140,4 @@ struct MidiThruView_Previews: PreviewProvider {
 }
 
 
+#endif

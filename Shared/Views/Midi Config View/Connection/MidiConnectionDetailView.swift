@@ -27,9 +27,11 @@ struct MidiConnectionDetailView: View {
     }
 }
 
+#if DEBUG
 struct MidiThruDetailView_Previews: PreviewProvider {
     static var previews: some View {
         MidiConnectionDetailView(midiConnection: MidiConnection.test)
             .environmentObject(MidiCenter.shared)
     }
 }
+#endif

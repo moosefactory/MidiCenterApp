@@ -36,6 +36,9 @@
 		BCC19682259A374F0079D423 /* ConfigMidiThruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */; };
 		BCC19683259A374F0079D423 /* ConfigMidiThruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19681259A374F0079D423 /* ConfigMidiThruView.swift */; };
 		BCD17B1B26260ED300033ABE /* MoofFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BCD17B1A26260ED300033ABE /* MoofFoundation */; };
+		BCD17B232626180100033ABE /* SwiftMIDI in Frameworks */ = {isa = PBXBuildFile; productRef = BCD17B222626180100033ABE /* SwiftMIDI */; };
+		BCD17B252626180100033ABE /* SwiftMidiCenter in Frameworks */ = {isa = PBXBuildFile; productRef = BCD17B242626180100033ABE /* SwiftMidiCenter */; };
+		BCD17B272626180100033ABE /* MoofFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BCD17B262626180100033ABE /* MoofFoundation */; };
 		BCD6843725A9CFF30048AD99 /* ChannelsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */; };
 		BCD6843825A9CFF30048AD99 /* ChannelsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843625A9CFF30048AD99 /* ChannelsMapView.swift */; };
 		BCD6843D25A9D0AA0048AD99 /* MidiRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6843C25A9D0AA0048AD99 /* MidiRangeView.swift */; };
@@ -161,6 +164,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD17B272626180100033ABE /* MoofFoundation in Frameworks */,
+				BCD17B252626180100033ABE /* SwiftMidiCenter in Frameworks */,
+				BCD17B232626180100033ABE /* SwiftMIDI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +404,9 @@
 			);
 			name = "MidiCenterApp (iOS)";
 			packageProductDependencies = (
+				BCD17B222626180100033ABE /* SwiftMIDI */,
+				BCD17B242626180100033ABE /* SwiftMidiCenter */,
+				BCD17B262626180100033ABE /* MoofFoundation */,
 			);
 			productName = "MidiCenter (iOS)";
 			productReference = BCF770842598AEA700BC5468 /* MidiCenterApp.app */;
@@ -1042,6 +1051,21 @@
 			productName = SwiftMIDI;
 		};
 		BCD17B1A26260ED300033ABE /* MoofFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD17B1926260ED300033ABE /* XCRemoteSwiftPackageReference "MoofFoundation" */;
+			productName = MoofFoundation;
+		};
+		BCD17B222626180100033ABE /* SwiftMIDI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC18D476259E932F001CFE2C /* XCRemoteSwiftPackageReference "SwiftMIDI" */;
+			productName = SwiftMIDI;
+		};
+		BCD17B242626180100033ABE /* SwiftMidiCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC4FBFF825AA5D2200C0DB8E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */;
+			productName = SwiftMidiCenter;
+		};
+		BCD17B262626180100033ABE /* MoofFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BCD17B1926260ED300033ABE /* XCRemoteSwiftPackageReference "MoofFoundation" */;
 			productName = MoofFoundation;

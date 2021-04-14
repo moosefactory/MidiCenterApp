@@ -25,8 +25,10 @@ struct ConfigMidiThruView: View {
     }
 }
 
+#if DEBUG
 struct ConfigMidiThruView_Previews: PreviewProvider {
     static var previews: some View {
         ConfigMidiThruView(midiConfig: MidiConfiguration.test, midiThru: MidiConnection.test)
     }
 }
+#endif
