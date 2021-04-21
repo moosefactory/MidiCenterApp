@@ -11,6 +11,7 @@ import CoreMIDI
 import Combine
 
 class UsedMidiInput: Codable, MidiObject, Identifiable, Hashable {
+    
     static func == (lhs: UsedMidiInput, rhs: UsedMidiInput) -> Bool {
         lhs.uuid == rhs.uuid
     }
@@ -20,7 +21,8 @@ class UsedMidiInput: Codable, MidiObject, Identifiable, Hashable {
     }
     var uuid: UUID = UUID()
     
-    var ref: MIDIObjectRef = 0
+    var uniqueID: Int { return ref.properties.uniqueID }
+    var ref: MIDIObjectRef
     var name: String
     
     var isAvailable: Bool { return ref != 0 }
@@ -34,11 +36,12 @@ class UsedMidiInput: Codable, MidiObject, Identifiable, Hashable {
     }
     
     enum CodingKeys: String, CodingKey {
+        case ref
         case uuid
         case name
     }
     
-    init(name: String, ref: MIDIObjectRef = 0) {
+    init(name: String, ref: MIDIObjectRef) {
         self.name = name
         self.ref = ref
     }
@@ -123,7 +126,7 @@ class MidiConfiguration: Codable, ObservableObject {
     #if DEBUG
     static let test: MidiConfiguration = {
        let mc = MidiConfiguration()
-        mc.inputs = [UsedMidiInput(name: "Midi Device 1"), UsedMidiInput(name: "Device X")]
+        mc.inputs = [UsedMidiInput(name: "Midi Device 1", ref: 0), UsedMidiInput(name: "Device X", ref: 0)]
         return mc
     }()
     #endif
