@@ -43,7 +43,13 @@ struct MidiConnectionTableView: View {
                         guard let info = info else {
                             return
                         }
-                        try? MidiCenter.shared.client.newConnection(with: info)
+                        do {
+                            let connection = try MidiCenter.shared.client.newConnection(with: info)
+                            print("Connection created: \(connection)")
+                        }
+                        catch {
+                            print("Can't create new connection")
+                        }
                     }) {
                         NewConnectionDialog(prompt: "New Connection", value: $info)
                     }
@@ -57,7 +63,13 @@ struct MidiConnectionTableView: View {
                     guard let info = value else {
                         return
                     }
-                    try? MidiCenter.shared.client.newConnection(with: info)
+                    do {
+                        let connection = try MidiCenter.shared.client.newConnection(with: info)
+                        print("Created connection :\r\(connection)")
+                    }
+                    catch {
+                        print("Can't create new connection")
+                    }
                     self.info = nil
                 })
                 .alert(isPresented: $gotError) { () -> Alert in
@@ -84,7 +96,8 @@ struct MidiConnectionTableView: View {
     func createConnection() {
         do {
             guard let info = info else { return }
-            try MidiCenter.shared.client.newConnection(with: info)
+            let connection = try MidiCenter.shared.client.newConnection(with: info)
+            print("Created connection:\r\(connection)")
         } catch {
             self.error = error as? SwiftMIDI.MidiError
             gotError = self.error != nil

@@ -40,7 +40,8 @@ struct MidiOutletCell: View {
             Image(systemName: "pianokeys")
             VStack(alignment: .leading) {
                 Text(input.name)
-                Text("Outlet \(refStr)")
+                let uuid = String(input.uuid.uuidString.prefix(8))
+                Text("Outlet \(uuid)… ref:\(refStr) id:\(input.uniqueID)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }

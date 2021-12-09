@@ -93,13 +93,17 @@ class MidiConfiguration: Codable, ObservableObject {
             let midiCenterOutlet = midiBay.input.outlet(for: input.element.name)
             let known = midiCenterOutlet != nil
             
-            print("Input '\(midiCenterOutlet?.name)' known: \(known), ref = \(midiCenterOutlet?.ref)")
-
+            if let outlet = midiCenterOutlet {
+            print("Input #\(input.offset) : '\(outlet.name)' known: \(known), ref = \(outlet.ref)")
+            
             if let ref = midiCenterOutlet?.ref, known  {
                 inputs[input.offset].setMidiRef(ref)
             } else {
                 // No more reference to CoreMidi input
                 inputs[input.offset].setUnvailable()
+            }
+            } else {
+                print("Can't find outlet #\(input.offset) - '\(input.element.name)'")
             }
         }
 
@@ -110,13 +114,17 @@ class MidiConfiguration: Codable, ObservableObject {
             let midiCenterOutlet = midiBay.output.outlet(for: output.element.name)
             let known = midiCenterOutlet != nil
             
-            print("Input '\(midiCenterOutlet?.name)' known: \(known), ref = \(midiCenterOutlet?.ref)")
+            if let outlet = midiCenterOutlet {
+            print("Input #\(output.offset) : '\(outlet.name)' known: \(known), ref = \(outlet.ref)")
 
-            if let ref = midiCenterOutlet?.ref, known  {
-                outputs[output.offset].setMidiRef(ref)
+            if known  {
+                outputs[output.offset].setMidiRef(outlet.ref)
             } else {
                 // No more reference to CoreMidi input
                 outputs[output.offset].setUnvailable()
+            }
+            } else {
+                
             }
         }
         
