@@ -86,6 +86,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "MidiCenterIcon.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
@@ -136,6 +137,7 @@
       "size" : "512x512"
     },
     {
+      "filename" : "MidiCenterIcon 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"

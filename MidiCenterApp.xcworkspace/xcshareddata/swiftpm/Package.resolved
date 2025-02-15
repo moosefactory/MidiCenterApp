@@ -1,34 +1,42 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "MoofFoundation",
-        "repositoryURL": "https://github.com/moosefactory/MoofFoundation.git",
-        "state": {
-          "branch": "master",
-          "revision": "72d0015cce3488116f907330397bc8c5c2bc0b94",
-          "version": null
-        }
-      },
-      {
-        "package": "SwiftMIDI",
-        "repositoryURL": "https://github.com/moosefactory/SwiftMIDI.git",
-        "state": {
-          "branch": null,
-          "revision": "12840da3da57a638de4d2a5f946c7e8759d0130f",
-          "version": "1.0.2"
-        }
-      },
-      {
-        "package": "SwiftMidiCenter",
-        "repositoryURL": "git@github.com:moosefactory/SwiftMidiCenter.git",
-        "state": {
-          "branch": "main",
-          "revision": "79d271c6bc4aaa29750aa2b3d2f992bdb2c011b9",
-          "version": null
-        }
+  "originHash" : "c6b02c4379fba44525cf9ac67f8b842a929ae16f3b6d8155d916a0b8bbfcb858",
+  "pins" : [
+    {
+      "identity" : "mffoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/moosefactory/MFFoundation.git",
+      "state" : {
+        "revision" : "d10ebf722a0943fd7827c76181a50a262a697869",
+        "version" : "2.0.7"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swiftmidi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/moosefactory/SwiftMIDI.git",
+      "state" : {
+        "revision" : "cb0cd7bb7d27ff76c08c976857445a8a49c4306d",
+        "version" : "1.0.7"
+      }
+    },
+    {
+      "identity" : "swiftmidicenter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/moosefactory/SwiftMidiCenter.git",
+      "state" : {
+        "revision" : "98b79a4c9e19ccbb2ababad5ebf709f35d8f7680",
+        "version" : "1.0.9"
+      }
+    },
+    {
+      "identity" : "unicolor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/moosefactory/UniColor.git",
+      "state" : {
+        "revision" : "ef3636e3e575822a81f8d23bd0b98889fa3bbbcd",
+        "version" : "1.0.5"
+      }
+    }
+  ],
+  "version" : 3
 }

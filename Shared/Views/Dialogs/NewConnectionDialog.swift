@@ -47,7 +47,7 @@ struct NewConnectionDialog: View {
                     ChannelFilterView(channels: $editedValue.channels)
                 }
                 Section {
-                    Picker(selection: $editedValue.connectionTypeIndex, label: Text("Strength")) {
+                    Picker(selection: $editedValue.connectionTypeIndex, label: Text("Port Type")) {
                         ForEach(0 ..< portTypes.count) {
                             Text(self.portTypes[$0])
                         }

@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Frameworks/MoofFoundation">
-   </FileRef>
-   <FileRef
-      location = "group:../SwiftMIDI">
-   </FileRef>
-   <FileRef
-      location = "group:../SwiftMidiCenter">
-   </FileRef>
-   <FileRef
       location = "container:MidiCenterApp.xcodeproj">
    </FileRef>
 </Workspace>

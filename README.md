@@ -1,4 +1,5 @@
 # MidiCenterApp
+![Icon](Icon.png)
 
 A **Swift UI** lab application to test and experiment **SwiftMIDI** and **SwiftMIDICenter**
 

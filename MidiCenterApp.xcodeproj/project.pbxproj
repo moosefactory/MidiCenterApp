@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		BC1F72F425A0752A00D4F5FC /* MidiCenterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F225A0752A00D4F5FC /* MidiCenterAppView.swift */; };
 		BC1F72FA25A0758800D4F5FC /* MidiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F925A0758800D4F5FC /* MidiConfigView.swift */; };
 		BC1F72FB25A0758800D4F5FC /* MidiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F72F925A0758800D4F5FC /* MidiConfigView.swift */; };
-		BC3E1B7A26304FE000F5A29D /* MoofFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BC3E1B7926304FE000F5A29D /* MoofFoundation */; };
 		BC3E1B7C26304FE000F5A29D /* SwiftMIDI in Frameworks */ = {isa = PBXBuildFile; productRef = BC3E1B7B26304FE000F5A29D /* SwiftMIDI */; };
 		BC3E1B7E26304FE000F5A29D /* SwiftMidiCenter in Frameworks */ = {isa = PBXBuildFile; productRef = BC3E1B7D26304FE000F5A29D /* SwiftMidiCenter */; };
 		BC464882259B5CE600F60370 /* MidiOutletTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464878259B5CB100F60370 /* MidiOutletTableView.swift */; };
@@ -26,6 +25,8 @@
 		BC4FC03125AB39A000C0DB8E /* MidiEntityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */; };
 		BC9C093D25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */; };
 		BC9C093E25A4DFD900AE6AFC /* NewConnectionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */; };
+		BCAE351C2D6113A4000C9B1E /* SwiftMidiCenter in Frameworks */ = {isa = PBXBuildFile; productRef = BCAE351B2D6113A4000C9B1E /* SwiftMidiCenter */; };
+		BCAE35202D611BC5000C9B1E /* SwiftMidiCenter in Frameworks */ = {isa = PBXBuildFile; productRef = BCAE351F2D611BC5000C9B1E /* SwiftMidiCenter */; };
 		BCB987F5259BC084009829CA /* MFPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB987F4259BC084009829CA /* MFPickerView.swift */; };
 		BCB987F6259BC084009829CA /* MFPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB987F4259BC084009829CA /* MFPickerView.swift */; };
 		BCC19660259A02EA0079D423 /* MidiCenterCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */; };
@@ -119,6 +120,7 @@
 		BC4FC02925AB1F7300C0DB8E /* MidiDeviceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiDeviceTableView.swift; sourceTree = "<group>"; };
 		BC4FC02F25AB39A000C0DB8E /* MidiEntityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiEntityTableView.swift; sourceTree = "<group>"; };
 		BC9C093C25A4DFD900AE6AFC /* NewConnectionDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewConnectionDialog.swift; sourceTree = "<group>"; };
+		BCAE351D2D6116C5000C9B1E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		BCB987F4259BC084009829CA /* MFPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFPickerView.swift; sourceTree = "<group>"; };
 		BCC1965F259A02EA0079D423 /* MidiCenterCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiCenterCommands.swift; sourceTree = "<group>"; };
 		BCC19673259A267F0079D423 /* ConfigMidiOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMidiOutputView.swift; sourceTree = "<group>"; };
@@ -168,8 +170,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAE35202D611BC5000C9B1E /* SwiftMidiCenter in Frameworks */,
+				BCAE351C2D6113A4000C9B1E /* SwiftMidiCenter in Frameworks */,
 				BC3E1B7E26304FE000F5A29D /* SwiftMidiCenter in Frameworks */,
-				BC3E1B7A26304FE000F5A29D /* MoofFoundation in Frameworks */,
 				BC3E1B7C26304FE000F5A29D /* SwiftMIDI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4FC01E25AB0B5E00C0DB8E /* README.md */,
+				BCAE351D2D6116C5000C9B1E /* Icon.png */,
 				BC4FC01D25AB0B5D00C0DB8E /* LICENSE */,
 				BC4FC02025AB0B9700C0DB8E /* Documentation */,
 				BCD3EF3B259EA97300CAF473 /* MidiCenterApp.entitlements */,
@@ -417,9 +421,10 @@
 			);
 			name = "MidiCenterApp (macOS)";
 			packageProductDependencies = (
-				BC3E1B7926304FE000F5A29D /* MoofFoundation */,
 				BC3E1B7B26304FE000F5A29D /* SwiftMIDI */,
 				BC3E1B7D26304FE000F5A29D /* SwiftMidiCenter */,
+				BCAE351B2D6113A4000C9B1E /* SwiftMidiCenter */,
+				BCAE351F2D611BC5000C9B1E /* SwiftMidiCenter */,
 			);
 			productName = "MidiCenter (macOS)";
 			productReference = BCF7708C2598AEA700BC5468 /* MidiCenterApp.app */;
@@ -496,6 +501,7 @@
 			);
 			mainGroup = BCF770762598AEA500BC5468;
 			packageReferences = (
+				BCAE351E2D611BC5000C9B1E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */,
 			);
 			productRefGroup = BCF770852598AEA700BC5468 /* Products */;
 			projectDirPath = "";
@@ -1002,17 +1008,33 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		BC3E1B7926304FE000F5A29D /* MoofFoundation */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MoofFoundation;
+/* Begin XCRemoteSwiftPackageReference section */
+		BCAE351E2D611BC5000C9B1E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moosefactory/SwiftMidiCenter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.9;
+			};
 		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
 		BC3E1B7B26304FE000F5A29D /* SwiftMIDI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftMIDI;
 		};
 		BC3E1B7D26304FE000F5A29D /* SwiftMidiCenter */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = SwiftMidiCenter;
+		};
+		BCAE351B2D6113A4000C9B1E /* SwiftMidiCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftMidiCenter;
+		};
+		BCAE351F2D611BC5000C9B1E /* SwiftMidiCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCAE351E2D611BC5000C9B1E /* XCRemoteSwiftPackageReference "SwiftMidiCenter" */;
 			productName = SwiftMidiCenter;
 		};
 /* End XCSwiftPackageProductDependency section */
